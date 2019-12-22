@@ -1,0 +1,179 @@
+*:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #6c757d !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Opera and Firefox */
+}
+
+.wrapper {
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #2c3e50 !important;
+  display: grid;
+  grid-template-columns: 320px 320px 320px 50px;
+  grid-gap: 50px;
+  background-color: #fff;
+  margin: 37px 0 0 49px !important;
+
+  .title-container {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 22px;
+    .title {
+      margin-left: 8px;
+      margin-top: -9px;
+      font-size: 32px;
+      height: 32px;
+      font-weight: 500;
+    }
+    .icon {
+      text-shadow: none;
+      font-size: 32px;
+      height: 32px;
+      margin-top: -2px;
+    }
+  }
+
+  .task-list {
+    min-height: 200px;
+    .task-item {
+      background: #fff;
+      width: 318px;
+      border-radius: 4px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #dedfdf;
+      box-shadow: 0px 3px 3px 0px #e6e6e6;
+      margin-top: 20px;
+      .task-complete-date {
+        width: max-content;
+        overflow: hidden;
+        padding: 1px 5px;
+        margin-bottom: -20px;
+        font-size: 11px;
+        font-weight: 700;
+        background-color: #9acd32;
+        color: #fff;
+        border-radius: 1px;
+        float: right;
+      }
+      .task-item-title,
+      .task-item-description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 318px;
+      }
+      .task-item-title {
+        padding: 16px 20px 0 20px;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      .task-item-description {
+        padding: 8px 20px 0 20px;
+        min-height: 42px;
+        font-size: 16px;
+      }
+      .task-item-date {
+        padding: 14px 20px 26px 20px;
+        font-size: 11px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .create-task {
+    width: max-content;
+    font-size: 50px;
+    cursor: pointer;
+    margin-top: 700px;
+    margin-left: -25px;
+  }
+  .close-icon {
+    font-size: 20px;
+  }
+}
+
+.ant-calendar-input-wrap {
+  height: 45px !important;
+  .ant-calendar-input {
+    padding-left: 5px !important;
+    height: 38px !important;
+    font-size: 16px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+.ant-modal-root {
+  .ant-modal-mask {
+    background-color: rgba(0, 0, 0, 0.375);
+  }
+  .ant-modal-header {
+    padding: 20px;
+    .ant-modal-title {
+      font-size: 20px;
+      margin-left: -4px;
+    }
+    border-color: #dee2e6;
+  }
+  .ant-modal-footer {
+    margin-top: -16px;
+    padding: 16px 16px;
+    border-color: #dee2e6;
+  }
+  .ant-modal-body {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .ant-calendar-picker {
+    display: block;
+  }
+  .ant-input:focus {
+    box-shadow: 0 0 0 3px rgba(191, 222, 255, 1);
+    border-color: #80bdff;
+  }
+  input,
+  textarea {
+    font-size: 16px;
+    padding-left: 12px;
+    border-color: #ced4da;
+  }
+  input {
+    height: 38px;
+    padding-bottom: 5px;
+  }
+  textarea {
+    resize: none;
+    height: 0px;
+    overflow-y: scroll;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+  button {
+    height: 38px;
+    font-size: 16px;
+    padding: 0 12px;
+    span {
+      margin-bottom: 2px;
+    }
+  }
+  .form-row {
+    color: #212529;
+    font-size: 16px !important;
+    margin-top: -8px;
+    margin-bottom: 24px;
+  }
+}
